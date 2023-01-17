@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">YandexMap_2</string>
+    <string name="search">search</string>
+    <string name="traffic_button">Traffic Button</string>
+    <string name="address">Address</string>
+</resources>

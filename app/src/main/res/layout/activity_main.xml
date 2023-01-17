@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <com.yandex.mapkit.mapview.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/address"
+        android:textColor="@color/purple_200"
+        app:layout_constraintBottom_toTopOf="@+id/probkiBut" />
+
+    <Button
+        android:id="@+id/probkiBut"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/traffic_button"
+        android:background="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mapview"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
